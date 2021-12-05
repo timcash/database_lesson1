@@ -36,4 +36,4 @@ VALUES ('My Fourth Event', NOW());
 SELECT * FROM events WHERE title LIKE '%Third%';
 
 -- Select all events created after a certain date
-SELECT * FROM events WHERE created_at > '2021-01-01';
+SELECT event_id, title FROM events WHERE created_at > '2021-01-01';
